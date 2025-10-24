@@ -1,0 +1,10 @@
+{
+    "batchSize":{"_type": "choice", "_value": [32, 64, 128]},
+    "dropout_rate": {"_type": "uniform", "_value": [0.1, 0.5]},
+    "lr1": {"_type": "uniform", "_value": [0.000005, 0.0005]},
+    "weightdecay1:":{"_type": "uniform", "_value": [0.00005, 0.001]},
+    "lr": {"_type": "uniform", "_value": [0.00005, 0.001]},
+    "weightdecay:":{"_type": "uniform", "_value": [0.000005, 0.0005]},
+    "stepsize":{"_type": "choice", "_value": [10, 20, 30, 40, 50, 60, 70, 80, 90]},
+    "gamma":{"_type": "uniform", "_value": [0.1, 0.9]}
+}

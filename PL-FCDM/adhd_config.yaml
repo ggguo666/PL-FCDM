@@ -1,0 +1,46 @@
+experimentName: gsj
+trialConcurrency: 18     # 当前处理好并开始等待的实验数，若有空卡，则运行处理好的实验
+trialGpuNumber: 3
+maxExecDuration: 10000h   # 最大搜索时间
+maxTrialNum: 4000    # 最多实验运行数
+#choice: local, remote, pai
+trainingServicePlatform: local
+logDir: /home/caorui/g/my_model/251/guo_2/nni-experiments_adhd
+searchSpacePath: /home/caorui/g/my_model/251/guo_2/search_space_adhd.json #search_space.json的路径
+trialCodeDirectory: .
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+  classArgs:
+    optimize_mode: maximize   # 训练目标参数最大化还是最小化
+trial:
+  command: python /home/caorui/g/my_model/251/guo_2/03-adhd_paramter.py #export CUDA_VISIBLE_DEVICES=2 && python /home/caorui/g/my_model/CNN/03-abdie_parameter.py # 主程序路径和其他超参
+  gpuNum: 1   # 每个实验要几块gpu
+
+
+localConfig:
+  useActiveGpu: true
+  maxTrialNumPerGpu: 6   # 一个GPU允许运行的最多实验数
+  gpuIndices: 1,2,3        #"0,1,2,3"
+experimentWorkingDirectory": "/home/caorui/g/my_model/251/guo_2/nni-experiments_adhd"
+
+
+#experimentName: gsj
+#trialConcurrency: 21
+#maxExperimentDuration: 10000h
+#maxTrialNumber: 4000
+#searchSpaceFile: /home/caorui/g/my_model/251/guo_2/search_space_adhd.json
+#experimentWorkingDirectory: /home/caorui/g/my_model/251/guo_2
+#useAnnotation: false
+#trialCommand: python /home/caorui/g/my_model/251/guo_2/03-adhd_paramter.py
+#trialGpuNumber: 1
+#trialCodeDirectory: /home/caorui/g/my_model/251/guo_2
+#tuner:
+#  name: TPE
+#  classArgs:
+#    optimize_mode: maximize
+#trainingService:
+#  platform: local
+#  gpuIndices: 1,2,3
+#  maxTrialNumberPerGpu: 7
+#  useActiveGpu: true
