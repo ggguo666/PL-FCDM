@@ -4,18 +4,79 @@
 
 The following Python packages and versions were used in this project:
 
-| Package               | Version      |
-|-----------------------|-------------|
-| Python                | 3.8+        |
-| PyTorch               | 1.12+       |
-| torch.nn.functional   | Included in PyTorch |
-| torchvision           | 0.13+       |
-| tensorboardX          | 2.5+        |
-| scikit-learn          | 1.0+        |
-| pandas                | 1.4+        |
-| matplotlib            | 3.5+        |
-| numpy                 | 1.22+       |
-| nni                   | 2.5+        |
+| Package               | Version          |
+| --------------------- | ---------------- |
+| python                | 3.10.16
+| contourpy             | 1.3.1            |
+| cuda-cudart           | 12.1.105         |
+| cuda-cupti            | 12.1.105         |
+| cuda-libraries        | 12.1.0           |
+| cuda-nvrtc            | 12.1.105         |
+| cuda-nvtx             | 12.1.105         |
+| cuda-opencl           | 12.8.55          |
+| cuda-runtime          | 12.1.0           |
+| cuda-version          | 12.8             |
+| cycler                | 0.12.1           |
+| docker-pycreds        | 0.4.0            |
+| einops                | 0.8.1            |
+| ffmpeg                | 4.3              |
+| filelock              | 3.11.0           |
+| fonttools             | 4.56.0           |
+| freetype              | 2.12.1           |
+| gitdb                 | 4.0.12           |
+| gitpython             | 3.1.44           |
+| googledrivedownloader | 1.1.0            |
+| grpcio                | 1.71.0           |
+| h5py                  | 3.13.0           |
+| idna                  | 3.7              |
+| jinja2                | 3.1.5            |
+| joblib                | 1.4.2            |
+| json-tricks           | 3.17.3           |
+| kiwisolver            | 1.4.8            |
+| lxml                  | 5.3.1            |
+| markdown              | 3.7              |
+| markupsafe            | 3.0.2            |
+| matplotlib            | 3.10.1           |
+| mkl                   | 2023.1.0         |
+| mkl-service           | 2.4.0            |
+| networkx              | 3.4.2            |
+| nibabel               | 5.3.2            |
+| nilearn               | 0.11.1           |
+| nni                   | 2.10.1           |
+| numpy                 | 1.23.5           |
+| nvidia-ml-py          | 12.570.86        |
+| openh264              | 2.1.1            |
+| openjpeg              | 2.5.2            |
+| openssl               | 3.0.15           |
+| packaging             | 24.2             |
+| pandas                | 2.2.3            |
+| pillow                | 11.1.0           |
+| pip                   | 25.0             |
+| prettytable           | 3.15.1           |
+| protobuf              | 5.29.4           |
+| psutil                | 7.0.0            |
+| pydantic              | 2.10.6           |
+| pytorch               | 2.1.0            |
+| pytorch-cuda          | 12.1             |
+| pytorch-mutex         | 1.0              |
+| scikit-learn          | 1.6.1            |
+| scipy                 | 1.10.1           |
+| seaborn               | 0.13.2           |
+| sentry-sdk            | 2.23.1           |
+| tensorboard           | 2.19.0           |
+| tensorboardx          | 2.6.2.2          |
+| torch-cluster         | 1.6.2+pt21cu121  |
+| torch-geometric       | 2.0.3            |
+| torch-scatter         | 2.1.2+pt21cu121  |
+| torch-sparse          | 0.6.18+pt21cu121 |
+| torch-spline-conv     | 1.2.2+pt21cu121  |
+| torchaudio            | 2.1.0            |
+| torchtriton           | 2.1.0            |
+| torchvision           | 0.16.0           |
+| tqdm                  | 4.67.1           |
+| wandb                 | 0.19.8           |
+| yacs                  | 0.1.8            |
+
 
 ## 📊 Optimized Hyperparameters by NNI
 
